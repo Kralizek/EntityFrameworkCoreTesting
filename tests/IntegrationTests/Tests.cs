@@ -79,7 +79,7 @@ public abstract class TestsWithBackend
 
     Database = new TodoDbContext(options);
 
-    Http = Tests.WebApplicationFactory.CreateDefaultClient();
+    Http = Tests.WebApplicationFactory.CreateClient();
   }
 
   [TearDown]
